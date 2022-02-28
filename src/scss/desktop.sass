@@ -1,0 +1,390 @@
+/* Main Css By Sass / Imports */
+@import "./type.sass"
+/* Desktop Style / Start Body / 1920px */
+body
+    margin: 0
+    padding: 0
+    border: 0
+    font-family: Segoe UI
+/* Header Styles */
+.header
+    display: flex
+    width: 100%
+    height: 95vh
+    background-image: url('../images/bcmed\ background\ 2x.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position-y: -20px
+    div
+        display: inline-block
+        width: 27%
+        height: 600px
+        margin: auto 10% auto auto
+        img
+            width: 100%
+            background-size: contain
+        form
+            display: inline-block
+            width: 95%
+            height: 55%
+            margin: 24px calc(2.5% - 4px)
+            border: 4px solid rgba(3, 3, 3, 0.3)
+            border-radius: 55px
+            h4
+                width: 100%
+                margin: 30px 0 20px 0
+                @extend %segoe__tittle
+            input
+                width: 71%
+                height: 12%
+                margin: 10px 13% 10px 12%
+                padding-left: 14px
+                border: 1.5px solid #003D79
+                border-radius: 10px
+                &:focus
+                    border-color: blue
+            input::placeholder
+                font-size: 16px
+                @extend %blue__dark
+        button
+            @extend %button
+            @extend %segoe__subtittle
+/* Main Prelude Styles */
+.prelude
+    width: 100%
+    h1
+        width: 100%
+        margin: 10px 0
+        font-size: 32px
+        @extend %segoe__tittle
+    p
+        width: 55%
+        margin: 20px 22.5% 40px 22.5%
+        text-align: center
+        font-weight: 600
+        @extend %segoe__subtittle
+    div
+        display: inline-table
+        width: 60%
+        margin: 0 20%
+        div
+            width: 28%
+            height: 360px
+            margin: 20px 0
+            box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25)
+            border: 2px solid #D0DDE9
+            border-radius: 10px
+            &:nth-child(2)
+                margin: 0 7.2%
+            &:nth-child(5)
+                margin: 0 7.2%
+            img
+                width: 20%
+                margin: 10px 40% 0 40%
+            h2
+                width: 88%
+                margin: 10px 7.5%
+                text-align: left
+                @extend %segoe__subtittle
+            p
+                width: 90%
+                margin: 0 7.5% 10px 7.5%
+                color: #003D79
+                @extend %segoe__paragraphy
+            h5
+                width: 85%
+                height: 150px
+                margin: 0 7.5% 0 7.5%
+                color: #003D79
+                @extend %segoe__paragraphy
+            span
+                display: block
+                width: 101.5%
+                height: 25px
+                margin: 80px 0 0 -2px
+                border-radius: 0 0 7px 7px
+                background-color: #003D79
+            h6
+                display: block  
+                width: 101.5%
+                height: 25px
+                margin: 80px 0 0 -2px
+                border-radius: 0 0 7px 7px
+                @extend %blue__dark--background
+        span
+            display: block
+            width: 80%
+            height: 1px
+            margin: 5% 10% 0 10%
+            background-color: #D0DDE9
+        button
+            width: 35%
+            height: 90px
+            margin: 50px 32.5% 0 32.5%
+            font-size: 22px
+            color: white
+            @extend %blue
+            &:hover
+                width: 36%
+                height: 100px
+                margin: 40px auto 0 32%
+            @extend %button
+            @extend %segoe__subtittle
+/* Footer Styles */
+.footer
+    display: flex
+    width: 100%
+    height: 200px
+    margin-top: 50px
+    @extend %blue__dark--background
+    div
+        display: flex
+        width: 70%
+        margin: 0 auto
+        div
+            width: 70%
+            img
+                width: 35%
+                margin: auto 0
+                background-size: contain
+            &:nth-child(2)
+                display: inline-block
+                width: 30%
+                h2
+                    margin-top: 60px
+                    text-align: left
+                    color: white
+                    @extend %segoe__tittle
+                img
+                    cursor: pointer
+                    width: 40px
+                    height: 40px
+                    margin: 0 5px
+                    &:nth-child(1)
+                        margin: 0 5px 0 0
+/* End */
+/* Main Css By Sass / Desktop Adaptation Screen (1366px) */
+@media screen and (max-width: 1366px)
+    .header
+        div
+            width: 30%
+            height: 500px
+            img
+                width: 95%
+                margin: 0 2.5%
+            form
+                h4
+                    font-size: 20px
+                    margin: 30px 0 10px 0
+                input
+                    height: 10%
+                input::placeholder
+                    font-size: 12px
+                button
+                    font-size: 17px
+                    height: 60px
+                    &:hover
+                        height: 72px
+    .prelude
+        h1
+            margin: 15px 0
+            font-size: 24px
+        p
+            width: 80%
+            font-size: 16px
+            margin: 20px 10% 30px 10%
+        div
+            div
+                height: 260px
+                h2
+                    font-size: 17px
+                p
+                    width: 89%
+                    font-size: 11px
+                h5
+                    font-size: 11px
+                span
+                    margin-top: 30px
+                h6
+                    margin-top: 10px
+            button
+                width: 30%
+                height: 60px
+                margin: 50px 35% 20px 35%
+                font-size: 17px
+                &:hover
+                    width: 31%
+                    height: 70px
+                    margin: 50px auto 20px 34.5%
+    .footer
+        height: 150px
+        div
+            div
+                img
+                    width: 35%
+                &:nth-child(2)
+                    h2
+                        margin-top: 40px
+                        font-size: 17px
+                        letter-spacing: 1px
+                    img
+                        width: 30px
+                        height: 30px
+/* End */
+/* Main Css By Sass / Tablet Screen (920px) */
+@media screen and (max-width: 920px)
+        .header
+            height: 85vh
+            background-position-x: -50px
+            div
+                width: 35%
+                height: 300px
+                margin-right: 5% 
+                img
+                    width: 90%
+                form
+                    width: 90%
+                    height: 200px
+                    margin-top: 10px
+                    border-radius: 40px
+                    h4
+                        margin-top: 20px
+                        letter-spacing: 0
+                        font-size: 13px
+                    input
+                        width: 70%
+                        height: 25px
+                        margin: 5px calc(15% - 10px)
+                        border-radius: 8px
+                    button
+                        height: 40px
+                        margin-top: 55px
+                        font-size: 13px
+                        &:hover
+                            height: 50px
+                            margin-top: 47px
+        .prelude
+            h1
+                margin-top: 0
+                letter-spacing: 1px
+                font-size: 18px
+            p
+                width: 80%
+                margin: 0 10% 30px 10%
+                font-size: 13px
+            div
+                width: 75%
+                margin: auto 12.5%
+                div
+                    width: 40%
+                    height: 290px
+                    margin: 30px 4.6%
+                    &:nth-child(2)
+                        margin: auto 4.6%
+                    &:nth-child(5)
+                        margin: auto 4.6%
+                        span
+                            margin-top: 20px
+                    &:nth-child(4)
+                        span
+                            margin-top: 46px
+                    h2
+                        font-size: 13px
+                    p
+                        width: 88%
+                        font-size: 13px
+                    h5
+                        font-size: 13px
+                    span
+                        margin-top: 50px
+                    h6
+                        margin-top: 20px
+                button
+                    @extend %button
+                    font-size: 13px
+        .footer
+            height: 100px
+            div
+                div
+                    img
+                        width: 40%
+                    &:nth-child(2)
+                        h2
+                            margin-top: 22px
+                            font-size: 13px
+                        img
+                            width: 25px
+                            height: 25px
+/* End */
+/* Main Css By Sass / Mobile Screen (400px) */
+@media screen and (max-width: 400px)
+                .header
+                    width: 100%
+                    height: 100vh
+                    background-size: cover
+                    background-position-x: -115px
+                    div
+                        width: 100%
+                        height: 570px
+                        margin: 580px 0 0 0
+                        background-color: #97E0EF
+                        img
+                            width: 80%
+                            margin: 30px 10%
+                            background-size: contain
+                        form
+                            width: 90%
+                            height: 400px
+                            margin: 0 calc( 5% - 4px )
+                            h4
+                                margin: 30px 0
+                                font-size: 17px
+                            input
+                                width: 80%
+                                height: 50px
+                                margin: 10px calc( 10% - 10px )
+                            button
+                                width: 60%
+                                height: 50px
+                                margin: 20px 20%
+                                font-size: 12px
+                .prelude
+                    margin-top: 570px
+                    div
+                        div
+                            width: 90%
+                            h2
+                                font-size: 17px
+                            p
+                                font-size: 12px
+                            h5
+                                font-size: 12px
+                        span
+                            width: 100%
+                            margin: 0
+                        button
+                            width: 70%
+                            height: 50px
+                            margin: 30px 15%
+                            &:hover
+                                width: 72%
+                                height: 60px
+                                margin: 26px 15% 26px 14%
+                .footer
+                    margin-top: 10px
+                    div
+                        width: 90%
+                        div
+                            width: 50%
+                            img
+                                width: 80%
+                            &:nth-child(2)
+                                width: 50%
+                                h2
+                                    margin-top: 30px
+                                    font-size: 12px
+                                    letter-spacing: 0
+                                img
+                                    width: 20px
+                                    height: 20px
+/* ------------------------- End Code ------------------------- */
